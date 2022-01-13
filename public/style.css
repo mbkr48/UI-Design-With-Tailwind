@@ -644,6 +644,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   justify-content: space-between;
 }
 
+.justify-around {
+  justify-content: space-around;
+}
+
 .rounded-full {
   border-radius: 9999px;
 }
