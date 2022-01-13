@@ -552,10 +552,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 4rem;
 }
 
-.ml-5 {
-  margin-left: 1.25rem;
-}
-
 .mt-10 {
   margin-top: 2.5rem;
 }
@@ -644,10 +640,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   justify-content: space-between;
 }
 
-.justify-around {
-  justify-content: space-around;
-}
-
 .rounded-full {
   border-radius: 9999px;
 }
@@ -664,9 +656,23 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-bottom-width: 8px;
 }
 
+.border-r-2 {
+  border-right-width: 2px;
+}
+
 .border-\[\#ff598f\] {
   --tw-border-opacity: 1;
   border-color: rgb(255 89 143 / var(--tw-border-opacity));
+}
+
+.border-\[\#a57ee9\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(165 126 233 / var(--tw-border-opacity));
+}
+
+.border-\[\#7647c7\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(118 71 199 / var(--tw-border-opacity));
 }
 
 .bg-\[\#f42267\] {
@@ -699,6 +705,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(241 241 241 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#f66f9b\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(246 111 155 / var(--tw-bg-opacity));
+}
+
 .bg-header-bg {
   background-image: url('images/header-bg.png');
 }
@@ -715,6 +726,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-image: url('images/testimonial-bg.png');
 }
 
+.bg-need-help-bg {
+  background-image: url('images/need-help-bg.png');
+}
+
 .bg-cover {
   background-size: cover;
 }
@@ -729,11 +744,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .p-5 {
   padding: 1.25rem;
-}
-
-.px-3 {
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
 }
 
 .px-4 {
@@ -776,32 +786,27 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 5rem;
 }
 
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
 .pt-5 {
   padding-top: 1.25rem;
 }
 
 .pt-20 {
   padding-top: 5rem;
-}
-
-.pl-5 {
-  padding-left: 1.25rem;
-}
-
-.pt-10 {
-  padding-top: 2.5rem;
-}
-
-.pl-10 {
-  padding-left: 2.5rem;
-}
-
-.pt-8 {
-  padding-top: 2rem;
-}
-
-.pl-12 {
-  padding-left: 3rem;
 }
 
 .pl-14 {
@@ -850,8 +855,17 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 1.25rem;
 }
 
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
 .font-semibold {
   font-weight: 600;
+}
+
+.font-bold {
+  font-weight: 700;
 }
 
 .uppercase {
@@ -893,6 +907,21 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-style: italic;
 
   font-display: swap;
+}
+
+.placeholder\:text-white::-moz-placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.placeholder\:text-white:-ms-input-placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.placeholder\:text-white::placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 @media (max-width: 1023px) {
@@ -1003,12 +1032,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 }
 
-@media (min-width: 1280px) {
-  .min-xl\:w-3\/5 {
-    width: 60%;
-  }
-}
-
 @media (min-width: 1024px) {
   .min-lg\:container {
     width: 100%;
@@ -1049,16 +1072,6 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin-right: auto;
   }
 
-  .min-lg\:mx-96 {
-    margin-left: 24rem;
-    margin-right: 24rem;
-  }
-
-  .min-lg\:mx-20 {
-    margin-left: 5rem;
-    margin-right: 5rem;
-  }
-
   .min-lg\:mt-5 {
     margin-top: 1.25rem;
   }
@@ -1079,39 +1092,13 @@ Ensure the default browser behavior of the `hidden` attribute.
     width: 40%;
   }
 
-  .min-lg\:w-96 {
-    width: 24rem;
-  }
-
-  .min-lg\:w-2\/4 {
-    width: 50%;
-  }
-
-  .min-lg\:w-3\/5 {
-    width: 60%;
-  }
-
   .min-lg\:px-3 {
     padding-left: 0.75rem;
     padding-right: 0.75rem;
   }
 
-  .min-lg\:px-14 {
-    padding-left: 3.5rem;
-    padding-right: 3.5rem;
-  }
-
-  .min-lg\:px-32 {
-    padding-left: 8rem;
-    padding-right: 8rem;
-  }
-
   .min-lg\:px-12 {
     padding-left: 3rem;
     padding-right: 3rem;
-  }
-
-  .min-lg\:pl-3 {
-    padding-left: 0.75rem;
   }
 }

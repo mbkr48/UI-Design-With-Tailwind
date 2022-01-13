@@ -11,6 +11,7 @@ module.exports = {
                 'world-map-bg': "url('images/world-map-bg.png')",
                 'story-bg': "url('images/story-bg.png')",
                 'testimonial-bg': "url('images/testimonial-bg.png')",
+                'need-help-bg': "url('images/need-help-bg.png')",
             },
 
             height: {
