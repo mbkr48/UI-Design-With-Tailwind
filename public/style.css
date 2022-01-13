@@ -468,6 +468,22 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-backdrop-sepia:  ;
 }
 
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.top-0 {
+  top: 0px;
+}
+
+.left-0 {
+  left: 0px;
+}
+
 .m-5 {
   margin: 1.25rem;
 }
@@ -490,11 +506,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .my-10 {
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
-}
-
-.mx-auto {
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .mr-3 {
@@ -537,16 +548,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-left: 3rem;
 }
 
-.mt-10 {
-  margin-top: 2.5rem;
-}
-
-.mt-12 {
-  margin-top: 3rem;
-}
-
 .mt-16 {
   margin-top: 4rem;
+}
+
+.ml-5 {
+  margin-left: 1.25rem;
+}
+
+.mt-10 {
+  margin-top: 2.5rem;
 }
 
 .inline-block {
@@ -573,14 +584,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 1.25rem;
 }
 
-.h-md {
-  height: 560px;
-}
-
-.h-80 {
-  height: 20rem;
-}
-
 .h-96 {
   height: 24rem;
 }
@@ -601,10 +604,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 1.25rem;
 }
 
-.w-80 {
-  width: 20rem;
-}
-
 .w-96 {
   width: 24rem;
 }
@@ -623,10 +622,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .max-w-md {
   max-width: 28rem;
-}
-
-.max-w-lg {
-  max-width: 32rem;
 }
 
 .flex-col {
@@ -712,8 +707,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-image: url('images/story-bg.png');
 }
 
+.bg-testimonial-bg {
+  background-image: url('images/testimonial-bg.png');
+}
+
 .bg-cover {
   background-size: cover;
+}
+
+.bg-center {
+  background-position: center;
 }
 
 .bg-no-repeat {
@@ -754,12 +757,51 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 1.5rem;
 }
 
+.py-12 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.px-20 {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
 .pt-5 {
   padding-top: 1.25rem;
 }
 
 .pt-20 {
   padding-top: 5rem;
+}
+
+.pl-5 {
+  padding-left: 1.25rem;
+}
+
+.pt-10 {
+  padding-top: 2.5rem;
+}
+
+.pl-10 {
+  padding-left: 2.5rem;
+}
+
+.pt-8 {
+  padding-top: 2rem;
+}
+
+.pl-12 {
+  padding-left: 3rem;
+}
+
+.pl-14 {
+  padding-left: 3.5rem;
 }
 
 .text-center {
@@ -812,6 +854,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   text-transform: uppercase;
 }
 
+.italic {
+  font-style: italic;
+}
+
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -851,11 +897,6 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin-right: auto;
   }
 
-  .lg\:mx-3 {
-    margin-left: 0.75rem;
-    margin-right: 0.75rem;
-  }
-
   .lg\:ml-0 {
     margin-left: 0px;
   }
@@ -876,20 +917,8 @@ Ensure the default browser behavior of the `hidden` attribute.
     display: none;
   }
 
-  .lg\:w-auto {
-    width: auto;
-  }
-
-  .lg\:w-9\/12 {
-    width: 75%;
-  }
-
   .lg\:w-full {
     width: 100%;
-  }
-
-  .lg\:max-w-full {
-    max-width: 100%;
   }
 
   .lg\:flex-col {
@@ -970,6 +999,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 }
 
+@media (min-width: 1280px) {
+  .min-xl\:w-3\/5 {
+    width: 60%;
+  }
+}
+
 @media (min-width: 1024px) {
   .min-lg\:container {
     width: 100%;
@@ -1010,21 +1045,26 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin-right: auto;
   }
 
-  .min-lg\:mx-3 {
-    margin-left: 0.75rem;
-    margin-right: 0.75rem;
+  .min-lg\:mx-96 {
+    margin-left: 24rem;
+    margin-right: 24rem;
+  }
+
+  .min-lg\:mx-20 {
+    margin-left: 5rem;
+    margin-right: 5rem;
   }
 
   .min-lg\:mt-5 {
     margin-top: 1.25rem;
   }
 
-  .min-lg\:h-full {
-    height: 100%;
-  }
-
   .min-lg\:h-md {
     height: 560px;
+  }
+
+  .min-lg\:h-full {
+    height: 100%;
   }
 
   .min-lg\:w-auto {
@@ -1035,16 +1075,39 @@ Ensure the default browser behavior of the `hidden` attribute.
     width: 40%;
   }
 
+  .min-lg\:w-96 {
+    width: 24rem;
+  }
+
+  .min-lg\:w-2\/4 {
+    width: 50%;
+  }
+
+  .min-lg\:w-3\/5 {
+    width: 60%;
+  }
+
   .min-lg\:px-3 {
     padding-left: 0.75rem;
     padding-right: 0.75rem;
   }
 
-  .min-lg\:pl-3 {
-    padding-left: 0.75rem;
+  .min-lg\:px-14 {
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
   }
 
-  .min-lg\:pl-5 {
-    padding-left: 1.25rem;
+  .min-lg\:px-32 {
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+
+  .min-lg\:px-12 {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .min-lg\:pl-3 {
+    padding-left: 0.75rem;
   }
 }

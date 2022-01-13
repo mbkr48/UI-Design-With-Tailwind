@@ -10,6 +10,7 @@ module.exports = {
                 'header-img': "url('images/header-img.png')",
                 'world-map-bg': "url('images/world-map-bg.png')",
                 'story-bg': "url('images/story-bg.png')",
+                'testimonial-bg': "url('images/testimonial-bg.png')",
             },
 
             height: {
