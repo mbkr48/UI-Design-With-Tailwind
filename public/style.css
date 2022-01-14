@@ -560,14 +560,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 2.5rem;
 }
 
-.ml-5 {
-  margin-left: 1.25rem;
-}
-
-.ml-10 {
-  margin-left: 2.5rem;
-}
-
 .mr-5 {
   margin-right: 1.25rem;
 }
@@ -670,10 +662,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .justify-around {
   justify-content: space-around;
-}
-
-.justify-evenly {
-  justify-content: space-evenly;
 }
 
 .rounded-full {
@@ -1024,10 +1012,6 @@ Ensure the default browser behavior of the `hidden` attribute.
     flex-direction: column;
   }
 
-  .lg\:items-center {
-    align-items: center;
-  }
-
   .lg\:py-10 {
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
@@ -1115,10 +1099,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 1280px) {
-  .min-xl\:items-start {
-    align-items: flex-start;
-  }
-
   .min-xl\:items-center {
     align-items: center;
   }
@@ -1210,5 +1190,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   .min-sm\:border-\[\#7647c7\] {
     --tw-border-opacity: 1;
     border-color: rgb(118 71 199 / var(--tw-border-opacity));
+  }
+
+  .min-sm\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
   }
 }
